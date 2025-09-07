@@ -1,0 +1,6 @@
+papers/
+.env
+.gitignore
+.env.local
+.env.*.local
+*.env
