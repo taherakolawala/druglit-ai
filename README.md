@@ -1,6 +1,9 @@
 # DrugLit-AI
 
-AI-powered literature mining tool for drug discovery. This tool streamlines PubMed paper searches, downloads research papers, and organizes metadata for drug discovery research. Built with Python, it offers efficient paper management and data organization capabilities.
+AI-powered literature mining tool for drug discovery. Fetches PubMed papers, extracts structured insights (targets, mechanisms, findings, gaps, compounds) with LLMs, and generates novel research directions and drug combination strategies. Features an interactive Streamlit interface for visualizing key findings, targets, and AI-suggested next steps.
+
+**Current Version** 
+- Can take user query in natural language, and search Pubmed data base and return relevant info and metadata on user query.
 
 ## Installation Guide
 
@@ -47,8 +50,7 @@ AI-powered literature mining tool for drug discovery. This tool streamlines PubM
 
 **Searching for Papers**
    - To make your queries, use the test command at the bottom of the `AI-PaperSearch.py` and change the query in the user_request() function there. 
-   - The user_request function has 2 parameters. The first one required and it is your query in natural language. The second one allows you to adjust how many related papers are returned (optional).
-   -Then run:
+   - The user_request function has 2 parameters. The first one required and it is your query in natural language. The second one allows you to adjust how many related papers are returned (optional). Then run:
    ```bash
    python AI-PaperSearch.py
    ```
