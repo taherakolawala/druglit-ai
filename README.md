@@ -40,26 +40,23 @@ AI-powered literature mining tool for drug discovery. This tool streamlines PubM
      OPENAI_API_KEY=your_api_key_here
      ```
 
+5. **Setup Paper Gather Folder**
+    - In the root of your project directory, create a folder called papers.
+
 ### Usage
 
-1. **Search and Download Papers**
+**Searching for Papers**
+   - To make your queries, use the test command at the bottom of the `AI-PaperSearch.py` and change the query in the user_request() function there. 
+   - The user_request function has 2 parameters. The first one required and it is your query in natural language. The second one allows you to adjust how many related papers are returned (optional).
+   -Then run:
    ```bash
    python AI-PaperSearch.py
    ```
    This will:
-   - Guide you through creating a PubMed search query
-   - Display search results
-   - Allow you to select and download papers
-   - To make your queries, use the test command at the bottom of the file
-   and change the query in the user_request() function there.
+   - Convert your natural language query to a high performance Pubmed query
+   - Search the pubmed database
+   - Download all info and metadata gathered on papers in the ./papers directory.
 
-2. **Download Additional Papers**
-   ```bash
-   python pubmeddownlload.py
-   ```
-   Use this to download papers from existing queries or process new PubMed searches.
-
-Downloaded papers and their metadata are automatically organized in the `papers/` directory, with separate folders for each search query.
 
 ### Project Structure
 ```
@@ -86,7 +83,6 @@ papers/
 - Make sure your OpenAI API key is correctly set in the `.env` file
 - Check that you have sufficient permissions to write to the `papers/` directory
 
-### Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+
 
 
